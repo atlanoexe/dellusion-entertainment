@@ -1,0 +1,213 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #08060f;
+  --foreground: #f0e6ff;
+  --card: #0f0b1a;
+  --card-foreground: #f0e6ff;
+  --popover: #0f0b1a;
+  --popover-foreground: #f0e6ff;
+  --primary: #ff2d9b;
+  --primary-foreground: #08060f;
+  --secondary: #0f0b1a;
+  --secondary-foreground: #f0e6ff;
+  --muted: #1a1428;
+  --muted-foreground: #6b5a8a;
+  --accent: #00e5ff;
+  --accent-foreground: #08060f;
+  --destructive: #ff3333;
+  --destructive-foreground: #ffffff;
+  --border: rgba(255, 45, 155, 0.15);
+  --input: transparent;
+  --input-background: rgba(255, 45, 155, 0.05);
+  --switch-background: #1a1428;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: rgba(255, 45, 155, 0.4);
+  --chart-1: #ff2d9b;
+  --chart-2: #00e5ff;
+  --chart-3: #a855f7;
+  --chart-4: #ff6bcb;
+  --chart-5: #7c3aed;
+  --radius: 4px;
+  --sidebar: #08060f;
+  --sidebar-foreground: #f0e6ff;
+  --sidebar-primary: #ff2d9b;
+  --sidebar-primary-foreground: #08060f;
+  --sidebar-accent: #0f0b1a;
+  --sidebar-accent-foreground: #f0e6ff;
+  --sidebar-border: rgba(255, 45, 155, 0.15);
+  --sidebar-ring: rgba(255, 45, 155, 0.4);
+
+  /* Goth-Cyberpunk Design System */
+  --neon-magenta: #ff2d9b;
+  --neon-cyan: #00e5ff;
+  --neon-purple: #a855f7;
+  --cyber-bg: #08060f;
+  --cyber-panel: #0f0b1a;
+  --cyber-panel-light: #1a1428;
+  --cyber-border-mag: rgba(255, 45, 155, 0.2);
+  --cyber-border-cyan: rgba(0, 229, 255, 0.2);
+  --cyber-glow-mag: rgba(255, 45, 155, 0.15);
+  --cyber-glow-cyan: rgba(0, 229, 255, 0.15);
+  --cyber-text: #d4c0f0;
+  --cyber-text-dim: #6b5a8a;
+
+  /* ─── Glassmorphism Design System ─── */
+  /* Backgrounds — ordered by visual importance (low → high) */
+  --glass-bg-low:   rgba(15, 11, 26, 0.35);
+  --glass-bg-mid:   rgba(15, 11, 26, 0.55);
+  --glass-bg-high:  rgba(15, 11, 26, 0.80);
+  --glass-nav-bg:   rgba(8,  6, 15, 0.65);
+
+  /* Blur intensities */
+  --glass-blur-sm:  8px;
+  --glass-blur-md:  14px;
+  --glass-blur-lg:  24px;
+  --glass-blur-nav: 28px;
+
+  /* Borders */
+  --glass-border-white: rgba(255, 255, 255, 0.06);
+  --glass-border-mag:   rgba(255, 45, 155, 0.15);
+  --glass-border-cyan:  rgba(0, 229, 255, 0.15);
+
+  /* Inner top-edge highlight (adds depth illusion) */
+  --glass-inset-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  /* Composite shadows */
+  --glass-shadow:       0 8px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  --glass-shadow-hover: 0 0 25px rgba(255, 45, 155, 0.12), 0 0 50px rgba(0, 229, 255, 0.06), 0 12px 40px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.07);
+  --glass-shadow-nav:   0 1px 0 rgba(255, 45, 155, 0.12), 0 4px 30px rgba(0, 0, 0, 0.55);
+}
+
+.dark {
+  --background: #08060f;
+  --foreground: #f0e6ff;
+  --card: #0f0b1a;
+  --card-foreground: #f0e6ff;
+  --popover: #0f0b1a;
+  --popover-foreground: #f0e6ff;
+  --primary: #ff2d9b;
+  --primary-foreground: #08060f;
+  --secondary: #0f0b1a;
+  --secondary-foreground: #f0e6ff;
+  --muted: #1a1428;
+  --muted-foreground: #6b5a8a;
+  --accent: #00e5ff;
+  --accent-foreground: #08060f;
+  --destructive: #ff3333;
+  --destructive-foreground: #ffffff;
+  --border: rgba(255, 45, 155, 0.15);
+  --input: #0f0b1a;
+  --ring: rgba(255, 45, 155, 0.4);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  input, textarea, select {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+    font-family: 'Share Tech Mono', monospace;
+  }
+}
