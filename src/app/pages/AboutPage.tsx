@@ -59,8 +59,7 @@ export function AboutPage() {
           <motion.h1
             initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[clamp(2.5rem,7vw,6rem)] font-black tracking-tighter mt-[-12px] mb-[23px] font-['Orbitron',sans-serif]"
-          >
+            className="text-[clamp(2.5rem,7vw,6rem)] font-black tracking-tighter mt-[-12px] mb-[23px] font-['Orbitron',sans-serif]">
             <span className="bg-gradient-to-r from-[#ff2d9b] to-[#00e5ff] bg-clip-text text-transparent">ABOUT US</span>
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: 0.1 }}
@@ -97,10 +96,7 @@ export function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
-              <motion.div
-                className="relative rounded-[4px] overflow-hidden border border-[#ff2d9b]/15"
-                whileHover={{ boxShadow: "0 0 40px rgba(255,45,155,0.15)" }}
-              >
+              <motion.div className="relative rounded-[4px] overflow-hidden border border-[#ff2d9b]/15" whileHover={{ boxShadow: "0 0 40px rgba(255,45,155,0.15)" }}>
                 <CornerBrackets />
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1571435763834-4d6fbb550bb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdXNpYyUyMGZlc3RpdmFsJTIwY3Jvd2QlMjBoYW5kcyUyMHVwfGVufDF8fHx8MTc3NDIwMjUwM3ww&ixlib=rb-4.1.0&q=80&w=1080"
@@ -176,8 +172,7 @@ export function AboutPage() {
         <div className="max-w-6xl mx-auto relative">
           <motion.div {...fadeInUp} className="text-center mb-10 sm:mb-16">
             <h2 className="text-[clamp(2rem,5vw,4.5rem)] font-black tracking-tighter mb-4 sm:mb-8 font-['Orbitron',sans-serif]">
-              <span className="text-[#f0e6ff]">The </span>
-              <span className="text-[#00e5ff]">Vision</span>
+              <span className="text-[#f0e6ff]">The </span><span className="text-[#00e5ff]">Vision</span>
             </h2>
           </motion.div>
           <motion.div {...fadeInUp} className="space-y-6 sm:space-y-8 text-[clamp(0.85rem,1.5vw,1.25rem)] text-[#6b5a8a] leading-relaxed text-center max-w-5xl mx-auto">
@@ -208,13 +203,8 @@ export function AboutPage() {
               { icon: <Zap className="w-8 h-8 sm:w-10 sm:h-10" />, title: "Authenticity", description: "No watered-down experiences. Real artists, real food, real culture.", accent: "#a855f7" },
               { icon: <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10" />, title: "Innovation", description: "Blending cutting-edge tech with grassroots community energy.", accent: "#ff2d9b" },
             ].map((value, index) => (
-              <motion.div
-                key={value.title}
-                initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-                transition={{ duration: 0.35, delay: index * 0.07 }}
-                whileHover={{ y: -8, transition: { type: "spring", stiffness: 400, damping: 20 } }}
-                className="group relative"
-              >
+              <motion.div key={value.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+                transition={{ duration: 0.35, delay: index * 0.07 }} whileHover={{ y: -8, transition: { type: "spring", stiffness: 400, damping: 20 } }} className="group relative">
                 <HudPanel glowOnHover className="p-5 sm:p-6 lg:p-8 h-full">
                   <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-[4px] border mb-4 sm:mb-6"
                     style={{ borderColor: `${value.accent}33`, backgroundColor: `${value.accent}0d` }}>
@@ -294,13 +284,11 @@ export function AboutPage() {
                   {errors.message && <p className="text-red-400 text-[clamp(0.7rem,1vw,0.8rem)] mt-1">Message is required</p>}
                 </div>
 
-                <motion.button
-                  type="submit"
+                <motion.button type="submit"
                   className="group relative w-full px-6 sm:px-8 py-4 sm:py-5 bg-gradient-to-r from-[#ff2d9b] to-[#a855f7] rounded-[4px] font-black uppercase tracking-wider text-white overflow-hidden"
                   whileHover={{ scale: 1.02, boxShadow: "0 0 40px rgba(255,45,155,0.4)" }}
                   whileTap={{ scale: 0.98 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 20 }}
-                >
+                  transition={{ type: "spring", stiffness: 400, damping: 20 }}>
                   <span className="relative flex items-center justify-center gap-3 text-[clamp(0.85rem,1.3vw,1.125rem)]">
                     Send Message
                     <Send className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 group-hover:rotate-12 transition-transform duration-200" />
