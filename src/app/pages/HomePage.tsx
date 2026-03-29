@@ -9,9 +9,11 @@ import {
 } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { GridOverlay, HudPanel, CornerBrackets, SectionLabel, NeonDivider } from "../components/CyberElements";
-import dellusionLogo from "figma:asset/98fd0357d543cf7a2ac209cef3aaba60987da768.png";
-import bankaiBeatsLogo from "figma:asset/02034364a16495b7fbe46117839758e1f588b630.png";
-import darkCoreLogo from "figma:asset/09aba90697fa65668019a215b58eed2ee055b779.png";
+
+// Logo assets
+const dellusionLogo = "https://images.unsplash.com/photo-1737629918399-45526c4f9264?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZW9uJTIwY3liZXJwdW5rJTIwbG9nbyUyMGVudGVydGFpbm1lbnQlMjBicmFuZCUyMG1hZ2VudGElMjBwdXJwbGV8ZW58MXx8fHwxNzc0NzcxNTYzfDA&ixlib=rb-4.1.0&q=80&w=1080";
+const bankaiBeatsLogo = "https://images.unsplash.com/photo-1744506123990-2ec6a304437f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbmltZSUyMGZlc3RpdmFsJTIwbG9nbyUyMGphcGFuZXNlJTIwbmVvbiUyMGRlc2lnbnxlbnwxfHx8fDE3NzQ3NzE1NjR8MA&ixlib=rb-4.1.0&q=80&w=1080";
+const darkCoreLogo = "https://images.unsplash.com/photo-1772555429452-7be312d2b226?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrcG9wJTIwY29uY2VydCUyMGRhcmslMjBhZXN0aGV0aWMlMjBsb2dvfGVufDF8fHx8MTc3NDc3MTU2NHww&ixlib=rb-4.1.0&q=80&w=1080";
 
 const fast = { duration: 0.4, ease: [0.16, 1, 0.3, 1] };
 const fadeInUp = {
