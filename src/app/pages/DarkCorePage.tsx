@@ -1,6 +1,8 @@
 import { motion } from "motion/react";
 import { GridOverlay, HudPanel, SectionLabel, NeonDivider } from "../components/CyberElements";
-import darkCoreLogo from "figma:asset/09aba90697fa65668019a215b58eed2ee055b779.png";
+
+// DARKCORE logo
+const darkCoreLogo = "https://images.unsplash.com/photo-1772555429452-7be312d2b226?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrcG9wJTIwY29uY2VydCUyMGRhcmslMjBhZXN0aGV0aWMlMjBsb2dvfGVufDF8fHx8MTc3NDc3MTU2NHww&ixlib=rb-4.1.0&q=80&w=1080";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },

@@ -2,7 +2,9 @@ import { motion } from "motion/react";
 import { ExternalLink } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { GridOverlay } from "../components/CyberElements";
-import bankaiBeatsLogo from "figma:asset/02034364a16495b7fbe46117839758e1f588b630.png";
+
+// BANKAI BEATS logo
+const bankaiBeatsLogo = "https://images.unsplash.com/photo-1744506123990-2ec6a304437f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbmltZSUyMGZlc3RpdmFsJTIwbG9nbyUyMGphcGFuZXNlJTIwbmVvbiUyMGRlc2lnbnxlbnwxfHx8fDE3NzQ3NzE1NjR8MA&ixlib=rb-4.1.0&q=80&w=1080";
 
 export function BankaiBeatsPage() {
   const bankaiBeatsWebsiteUrl = "https://www.bankaibeatsfest.com";
