@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { GridOverlay } from "./CyberElements";
 
 // Dellusion Entertainment Logo
-const dellusionLogo = "https://images.unsplash.com/photo-1737629918399-45526c4f9264?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZW9uJTIwY3liZXJwdW5rJTIwbG9nbyUyMGVudGVydGFpbm1lbnQlMjBicmFuZCUyMG1hZ2VudGElMjBwdXJwbGV8ZW58MXx8fHwxNzc0NzcxNTYzfDA&ixlib=rb-4.1.0&q=80&w=1080";
+const dellusionLogo = "https://media.discordapp.net/attachments/876112969476493332/1487728799482384394/DELLUSION_LOGO_HORIZONTAL_WHITE.png?ex=69ca32ea&is=69c8e16a&hm=cbc46c24d49cee7c8a22888501edb296fddba2656dc4da1aa8101c9b052c1d13&=&format=webp&quality=lossless&width=1782&height=1265";
 
 export function RootLayout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
