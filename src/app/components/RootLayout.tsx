@@ -2,8 +2,10 @@ import { Outlet, Link, useLocation } from "react-router";
 import { useState, useEffect } from "react";
 import { Menu, X, Instagram, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import dellusionLogo from "figma:asset/98fd0357d543cf7a2ac209cef3aaba60987da768.png";
 import { GridOverlay } from "./CyberElements";
+
+// Dellusion Entertainment Logo
+const dellusionLogo = "https://images.unsplash.com/photo-1737629918399-45526c4f9264?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZW9uJTIwY3liZXJwdW5rJTIwbG9nbyUyMGVudGVydGFpbm1lbnQlMjBicmFuZCUyMG1hZ2VudGElMjBwdXJwbGV8ZW58MXx8fHwxNzc0NzcxNTYzfDA&ixlib=rb-4.1.0&q=80&w=1080";
 
 export function RootLayout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
