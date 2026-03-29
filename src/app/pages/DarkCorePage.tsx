@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { GridOverlay, HudPanel, SectionLabel, NeonDivider } from "../components/CyberElements";
 
 // DARKCORE logo
-const darkCoreLogo = "https://images.unsplash.com/photo-1772555429452-7be312d2b226?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrcG9wJTIwY29uY2VydCUyMGRhcmslMjBhZXN0aGV0aWMlMjBsb2dvfGVufDF8fHx8MTc3NDc3MTU2NHww&ixlib=rb-4.1.0&q=80&w=1080";
+const darkCoreLogo = "https://media.discordapp.net/attachments/876112969476493332/1487728798861623306/Horizontal_White_Red_Eyes.png?ex=69ca32ea&is=69c8e16a&hm=a2651769d083c90a8f70d1af42121d5494af08b1070c2692b6208498aa44a413&=&format=webp&quality=lossless&width=2333&height=726";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },

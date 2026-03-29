@@ -4,7 +4,7 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { GridOverlay } from "../components/CyberElements";
 
 // BANKAI BEATS logo
-const bankaiBeatsLogo = "https://images.unsplash.com/photo-1744506123990-2ec6a304437f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbmltZSUyMGZlc3RpdmFsJTIwbG9nbyUyMGphcGFuZXNlJTIwbmVvbiUyMGRlc2lnbnxlbnwxfHx8fDE3NzQ3NzE1NjR8MA&ixlib=rb-4.1.0&q=80&w=1080";
+const bankaiBeatsLogo = "https://media.discordapp.net/attachments/876112969476493332/1487728798383210536/HORIZONTAL_White_Red_Eyes.png?ex=69ca32ea&is=69c8e16a&hm=09714bafcfa5588c490a676328b58463d3859c3ae34c37b87f24f797c1e9710b&=&format=webp&quality=lossless&width=2333&height=731";
 
 export function BankaiBeatsPage() {
   const bankaiBeatsWebsiteUrl = "https://www.bankaibeatsfest.com";
